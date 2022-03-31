@@ -13,14 +13,17 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 6fr;
+  height: 100vh;
 }
 
 .sidebar {
   background-color: var(--dark-color, darkgreen);
   color: white;
+  grid-column: span 1;
+  grid-row: span 2;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .icon {
@@ -30,7 +33,7 @@
 .logo,
 .item {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   gap: 30px;
   margin-left: 30px;
   margin-top: 30px;
@@ -51,4 +54,16 @@
 
 .logo img {
   height: 50px;
+}
+
+.header {
+  grid-column: 2;
+  background-color: var(--light-color, white);
+  grid-row: 1 / 2;
+}
+
+.main {
+  grid-row: 2;
+  background-color: var(--main-color, green);
+  grid-column: 2;
 }
