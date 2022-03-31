@@ -78,7 +78,7 @@
   align-items: center;
   padding: 20px;
   padding-left: 40px;
-  gap: 40vw;
+  gap: 42vw;
 }
 
 .user {
@@ -88,8 +88,9 @@
   color: var(--main-color);
 }
 
-.user .user-icon {
+.user-icon-sm {
   width: 45px;
+  border-radius: 50%;
 }
 
 input[type="search"] {
@@ -103,4 +104,40 @@ input[type="search"] {
 ::-webkit-input-placeholder {
   text-align: left;
   opacity: 50%;
+}
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  gap: 46.5vw;
+  padding: 20px 40px;
+  padding-top: 10px;
+}
+
+.hello {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+button {
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 30px;
+  padding: 10px 30px;
+  border: 0px;
+  margin: 0px 10px;
+}
+
+.h-text {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+p {
+  font-weight: 100;
+}
+
+.card {
+  background-color: white;
 }
