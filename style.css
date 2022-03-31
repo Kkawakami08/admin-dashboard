@@ -67,3 +67,40 @@
   background-color: var(--main-color, green);
   grid-column: 2;
 }
+
+.user-icon {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-left: 40px;
+  gap: 40vw;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: var(--main-color);
+}
+
+.user .user-icon {
+  width: 45px;
+}
+
+input[type="search"] {
+  border-radius: 20px;
+  border: 0.5px var(--main-color) solid;
+  background-color: white;
+  width: 500px;
+  height: 30px;
+  padding: 0px 10px;
+}
+::-webkit-input-placeholder {
+  text-align: left;
+  opacity: 50%;
+}
