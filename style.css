@@ -30,8 +30,8 @@
 
 .header {
   display: grid;
-  background-color: var(--main-color);
-  color: white;
+  background-color: var(--light-color);
+  color: var(--dark-color);
   grid-column: 2 / span 1;
   grid-row: span 1;
   grid-template-rows: 1fr 2fr;
@@ -48,9 +48,13 @@
 }
 
 .main {
-  background-color: var(--light-color);
+  background-color: var(--main-color);
   display: grid;
   grid-template-columns: 3fr 1fr;
+}
+
+.main h4 {
+  color: white;
 }
 
 .projects {
@@ -74,8 +78,6 @@
 .trending {
   grid-column: 2;
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
 }
 
 .trending > h4,
@@ -83,11 +85,14 @@
   grid-column: span 2;
 }
 
-.trending div {
-  grid-column: 2;
+.trending-card {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
 }
 
-.icon {
+.icon,
+.card-icon {
   width: 30px;
 }
 
@@ -108,8 +113,8 @@
 }
 
 button {
-  background-color: var(--light-color);
-  color: var(--main-color);
+  background-color: var(--dark-color);
+  color: white;
   height: 40px;
   width: 100px;
   font-family: "Archivo", sans-serif;
